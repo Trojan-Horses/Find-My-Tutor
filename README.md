@@ -2,6 +2,7 @@
 This is a repository for the app to be submitted as the final project of Codepath University's  iOS Development course 
 
 Team Members: Sumit Dhungel, Sudheesh Bhattarai, Rajjwal Rawal
+
 Group Name: Trojan Horses
 
 # Project 1 - Find-My-Tutor
