@@ -13,10 +13,10 @@ Find My Tutor is a simple app to make it easy for students to find a tutor near 
 
 The following **required** functionality is complete:
 
-- [ ] Both tutor and student can sign in
-- [ ] The current signed in user will be persisted across restarts
-- [ ] Both student and tutor can create their profile
-- [ ] Students can view tutors nearby them
+- Both tutor and student can sign in
+- The current signed in user will be persisted across restarts
+- Both student and tutor can create their profile
+- Students can view tutors nearby them
 - [ ] A student can send request for a tutor, and if tutor accepts the request, they agree on a location and payment
 - [ ] Review for both tutor and student
 - [ ] Payment System
