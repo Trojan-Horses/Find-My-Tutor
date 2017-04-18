@@ -51,44 +51,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
 
     @IBAction func onSignUp(_ sender: Any) {
-        let newUser = PFUser()
-        if choiceIndex == 0{
-            LoginViewController.currentUserDetail = "Student"
-            userNameTemp = "student_" + userNameLabel.text!
-            
-        }
-        else{
-            LoginViewController.currentUserDetail = "Tutor"
-            userNameTemp = "tutor_" + userNameLabel.text!
-            
-        }
-        newUser.username = userNameTemp
-        newUser.password = passWordLabel.text
-        newUser.signUpInBackground {
-            (succeeded: Bool, error:Error?) -> Void in
-            if succeeded {
-                print("Created a", LoginViewController.currentUserDetail!, " user")
-                let alertController = UIAlertController(title: "WELCOME", message: "Welcome to Chat", preferredStyle: .alert)
-                
-                
-                let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
-                    
-                }
-                alertController.addAction(cancelAction)
-                
-                
-                self.present(alertController, animated: true) {
-                    // optional code for what happens after the alert controller has finished presenting
-                }
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else{
-                print("Error is : ",error?.localizedDescription)
-            }
-        }
-        
-        
-        
+        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
         
         
     }
@@ -141,7 +104,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         
     }
-    @IBOutlet weak var onSignIn: UIButton!
+   
     /*
     // MARK: - Navigation
 

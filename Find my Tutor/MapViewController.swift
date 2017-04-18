@@ -23,42 +23,153 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var count: Int?
     static var longitude : String?
     static var latitude : String?
+    var allElements = [PFObject]()
+    var objectID: String!
     
-    func getData(){
-        // construct PFQuery
-        locationIndex = 0
+    func getAllData(){
         let query = PFQuery(className: "Post")
         query.order(byDescending: "createdAt")
         query.includeKey("author")
+        query.includeKey("_id")
+        query.includeKey("firstName")
+        query.includeKey("phoneNumber")
+        query.includeKey("email")
+        query.includeKey("occupation")
+        query.includeKey("latitude")
+        query.includeKey("longitude")
         
-        // fetch data asynchronously
-        query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) -> Void in
-            if let posts = posts {
-                self.tutorLocation = posts
-                
-                for element in self.tutorLocation{
-                    if element["student"] as! String! == "Tutor"{
-                        
-                        var author: String!
-                        var longititude: String!
-                        var latitude: String!
-                        
-                        author = element["author"] as! String
-                        longititude = element["latitude"] as! String
-                        latitude = element["longitutude"] as! String
-                        
-                        self.getMarkers(latitude: latitude, longitude: longititude, author: author)
+        query.includeKey("lastName")
+        query.includeKey("author")
+        
+      
+
+        
+        
+       query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) -> Void in
+        if let random = posts{
+            
+                self.allElements = random
+                var currentUser = PFUser.current()
+            
+            
+                var occupation = currentUser?["occupation"]
+                var userName = "\(currentUser?["username"])"
+            
+            
+                for element in self.allElements{
+                    if "\(element["author"])" == userName{
+                        self.objectID = element.objectId
                     }
                 }
-                
-                // do something with the data fetched
-            } else {
-                print("Error! : ", error?.localizedDescription)
-                // handle error
+            
+            
+                print("The object id for : ", userName, " is : ", self.objectID)
+            
+            
+            
+            
+                if occupation as! String != "Tutor"{
+                    self.getData(allElement: self.allElements)
+                }
+                else{
+                    self.updateCoordinates()
             }
             
+            }
+        }
+        
+    }
+    
+    func updateCoordinates(){
+        
+        print("Inside this function")
+        print("the id is : ", self.objectID)
+        if self.objectID != nil{
+            let query = PFQuery(className: "Post")
+            do {
+                let object = try query.getObjectWithId(self.objectID)
+                print("The id is found")
+                print("Lat is : ", MapViewController.latitude, "Long is : ",MapViewController.longitude)
+                if MapViewController.latitude != nil && MapViewController.longitude != nil{
+                    object["latitude"] = MapViewController.latitude
+                    object["longitude"] = MapViewController.longitude
+                    object.saveInBackground()
+                    
+                }
+            } catch {
+                print("Error while saving the data : ",error.localizedDescription)
+            }
+        }
+        // If need for asynch. call uncomment this part
+        /*
+            query.getObjectInBackground(withId: self.objectID) { (objects, error) -> Void in
+                print("Id is found")
+                print("Lat is : ", MapViewController.latitude, "Long is : ", MapViewController.longitude)
+                if MapViewController.latitude != nil && MapViewController.longitude != nil{
+                    objects?["latitude"] = MapViewController.latitude
+                    objects?["longitude"] = MapViewController.longitude
+//                    objects?.saveInBackground()
+//                    print("saved")
+//                    print("Lat changed is : ", objects?["latitude"], "Long changed is : ", objects?["longitude"])
+                    objects?.saveInBackground { (saved:Bool, error:Error?) -> Void in
+                        if saved {
+                            print("saved worked")
+                            print("Lat changed is : ", objects?["latitude"], "Long changed is : ", objects?["longitude"])
+                        } else {
+                            print("ERROR happend", error.debugDescription)
+                        }
+                    }
+                    
+                    
+                    
+                }
+                else{
+                    print("Error updating the data")
+                }
+                
+            }
+    */
+            
+        
+    }
+    
+    func getData(allElement: [PFObject]){
+        // construct PFQuery
+        locationIndex = 0
+        
+            for element in self.allElements{
+                if element["occupation"] as! String! == "Tutor"{
+                        
+                        
+                    print("The user info is : ", element)
+                    var author: String!
+                    var longititude: String!
+                    var latitude: String!
+                        
+                    var fullName : String!
+                    fullName = element["firstName"] as! String
+                    fullName.append(" ")
+                    fullName.append(element["lastName"] as! String)
+                    
+                    author = element["author"] as! String
+                    
+                    
+                    
+                    
+                    longititude = element["longitude"] as? String
+                    latitude = element["latitude"] as? String
+                    
+                    if longititude != nil && latitude != nil {
+                        self.getMarkers(latitude: latitude, longitude: longititude, author: fullName)
+                    }
+                        
+                        
+                        
+
+                }
         }
     }
+    
     
     //called everytime the user location is changed
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -91,15 +202,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             }
             else if(LoginViewController.currentUserDetail as String! == "Tutor"){
                 count = count! + 1
-                print("Inside this function")
-                Tutor.postUserImage( withCompletion: { _ in
-                    //s MBProgressHUD.showAdded(to: self.view, animated: true)
-                    print("Completed")
-                    DispatchQueue.main.async {
-                        print("POSTED")
-                        
-                    }}
-                )
+               
+                
+                ShareViewController.latitude = MapViewController.latitude!
+                ShareViewController.longitude = MapViewController.longitude!
+                
             }
             
             
@@ -121,18 +228,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         print("Error", error.localizedDescription)
     }
     
-    
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        if LoginViewController.currentUserDetail == "Student"{
-//            
-//            getData()
-//            //print("The post are : ", tutorLocation)
-//        }
-//        
-//        
-//    }
     
     func getMarkers(latitude: String, longitude: String, author: String) -> Void {
         
@@ -160,30 +255,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 
         var region = MKCoordinateRegion(center: location, span: span)
         
-//        var start = author.index(author.startIndex, offsetBy: 5)
-//        print("The end Index is : ", author.endIndex)
-//        var end = author.endIndex
-//        
-//        var range = start ... end
-//        var correctAuthor = author[range]
-//
-//        print("Author is : ", correctAuthor)
-        
-        
-        var correctAuthor: String!
-        var slicingIndex: Int!
-        slicingIndex = 0
-        correctAuthor = ""
-        for element in author.characters{
-            print("Chracter outsude is : ", element)
-            if slicingIndex >= 6{
-                print("Character is : ", element)
-                correctAuthor = correctAuthor + String(element)
-               
-            }
-            slicingIndex = slicingIndex + 1
-        }
-        
          mapView.setRegion(region, animated: true)
         
          annotation.coordinate = location
@@ -191,7 +262,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
       
         
                 
-         annotation.title = correctAuthor
+         annotation.title = author
         
         mapView.addAnnotation(annotation)
 
@@ -202,6 +273,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.delegate = self
+        getAllData()
+        
+        print("Inside the student thing")
         
         count = 0
         if LoginViewController.currentUserDetail as String! == "Tutor"{
@@ -211,7 +285,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         }
         else{
-            getData()
+            //getData()
             //getMarkers()
         }
         

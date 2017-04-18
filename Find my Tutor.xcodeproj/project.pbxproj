@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		58B9D1BE8E9F1F0B832C578E /* Pods_Find_my_Tutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */; };
+		FE1D5A691E9401A5006A6539 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D5A681E9401A5006A6539 /* ShareViewController.swift */; };
+		FE26E18B1EA0453D005EE62C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */; };
 		FE312FAC1E85E0E9000DFE40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE312FAB1E85E0E9000DFE40 /* AppDelegate.swift */; };
 		FE312FB11E85E0E9000DFE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE312FAF1E85E0E9000DFE40 /* Main.storyboard */; };
 		FE312FB31E85E0E9000DFE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE312FB21E85E0E9000DFE40 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		6E94B92C0D4BEADC26C5622E /* Pods-Find my Tutor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.release.xcconfig"; sourceTree = "<group>"; };
 		E3A968BD5BD06D376CA55E8B /* Pods-Find my Tutor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.debug.xcconfig"; sourceTree = "<group>"; };
 		F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_my_Tutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1D5A681E9401A5006A6539 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		FE312FA81E85E0E9000DFE40 /* Find my Tutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find my Tutor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE312FAB1E85E0E9000DFE40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE312FB01E85E0E9000DFE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				FED756E61E85E30600508B87 /* LoginViewController.swift */,
 				FED756E81E85F3D400508B87 /* MapViewController.swift */,
 				FED756EA1E85F59400508B87 /* ProfileViewController.swift */,
+				FE1D5A681E9401A5006A6539 /* ShareViewController.swift */,
+				FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1D5A691E9401A5006A6539 /* ShareViewController.swift in Sources */,
+				FE26E18B1EA0453D005EE62C /* ProfileTableViewCell.swift in Sources */,
 				FED756E71E85E30600508B87 /* LoginViewController.swift in Sources */,
 				FED756E91E85F3D400508B87 /* MapViewController.swift in Sources */,
 				FED756EB1E85F59400508B87 /* ProfileViewController.swift in Sources */,
