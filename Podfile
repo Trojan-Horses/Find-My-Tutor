@@ -6,7 +6,7 @@ target 'Find my Tutor' do
   use_frameworks!
   pod ‘Parse’
   pod ‘ParseUI’
-
+  pod 'RKDropdownAlert'
   # Pods for Find my Tutor
 
 end

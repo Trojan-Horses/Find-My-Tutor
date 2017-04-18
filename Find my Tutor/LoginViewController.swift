@@ -8,7 +8,7 @@
 
 import UIKit
 import Parse
-
+import RKDropdownAlert
 
 class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -85,7 +85,10 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else{
-                let alertController = UIAlertController(title: "ERROR", message: "INVALID VALUES", preferredStyle: .alert)
+                
+                RKDropdownAlert.show()
+                RKDropdownAlert.title("Login Failed!!", message: "Please Enter a Valid Username and Password")
+                /*let alertController = UIAlertController(title: "ERROR", message: "INVALID VALUES", preferredStyle: .alert)
                 
                 
                 let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
@@ -93,11 +96,11 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 }
                 // add the cancel action to the alertController
                 alertController.addAction(cancelAction)
+                */
                 
-                
-                self.present(alertController, animated: true) {
+                //self.present(alertController, animated: true) {
                     // optional code for what happens after the alert controller has finished presenting
-                }
+         //       }
                 
             }
         }
