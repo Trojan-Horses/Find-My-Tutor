@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		33FBE64A1EAA8295009573AC /* backg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE6491EAA8295009573AC /* backg.gif */; };
 		33FBE64F1EAA861B009573AC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBE64E1EAA861B009573AC /* StartViewController.swift */; };
-		33FBE6511EAA8674009573AC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE6501EAA8674009573AC /* WebViewContent.html */; };
+		33FBE65B1EAA97A8009573AC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE65A1EAA97A8009573AC /* WebViewContent.html */; };
 		58B9D1BE8E9F1F0B832C578E /* Pods_Find_my_Tutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */; };
 		FE1D5A691E9401A5006A6539 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D5A681E9401A5006A6539 /* ShareViewController.swift */; };
 		FE26E18B1EA0453D005EE62C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		33FBE6491EAA8295009573AC /* backg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backg.gif; path = "Find my Tutor/Assets.xcassets/backg.gif"; sourceTree = "<group>"; };
 		33FBE64E1EAA861B009573AC /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		33FBE6501EAA8674009573AC /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewContent.html; path = "../../../../Downloads/Video-Background-GIF-master/VideoBackground.obj/VideoBackground.obj/WebViewContent.html"; sourceTree = "<group>"; };
+		33FBE65A1EAA97A8009573AC /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		6E94B92C0D4BEADC26C5622E /* Pods-Find my Tutor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.release.xcconfig"; sourceTree = "<group>"; };
 		E3A968BD5BD06D376CA55E8B /* Pods-Find my Tutor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.debug.xcconfig"; sourceTree = "<group>"; };
 		F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_my_Tutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +90,7 @@
 		FE312F9F1E85E0E9000DFE40 = {
 			isa = PBXGroup;
 			children = (
+				33FBE65A1EAA97A8009573AC /* WebViewContent.html */,
 				33FBE64B1EAA836A009573AC /* Images */,
 				FE312FAA1E85E0E9000DFE40 /* Find my Tutor */,
 				FE312FA91E85E0E9000DFE40 /* Products */,
@@ -109,7 +110,6 @@
 		FE312FAA1E85E0E9000DFE40 /* Find my Tutor */ = {
 			isa = PBXGroup;
 			children = (
-				33FBE6501EAA8674009573AC /* WebViewContent.html */,
 				33FBE64E1EAA861B009573AC /* StartViewController.swift */,
 				FE312FB71E85E0E9000DFE40 /* Info.plist */,
 				FE312FB21E85E0E9000DFE40 /* Assets.xcassets */,
@@ -213,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FBE6511EAA8674009573AC /* WebViewContent.html in Resources */,
+				33FBE65B1EAA97A8009573AC /* WebViewContent.html in Resources */,
 				FE312FB61E85E0E9000DFE40 /* LaunchScreen.storyboard in Resources */,
 				33FBE64A1EAA8295009573AC /* backg.gif in Resources */,
 				FE312FB31E85E0E9000DFE40 /* Assets.xcassets in Resources */,
