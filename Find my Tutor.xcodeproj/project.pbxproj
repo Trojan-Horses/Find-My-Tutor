@@ -186,6 +186,7 @@
 				TargetAttributes = {
 					FE312FA71E85E0E9000DFE40 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A8AN4X9Q2A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -406,6 +407,7 @@
 			baseConfigurationReference = E3A968BD5BD06D376CA55E8B /* Pods-Find my Tutor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8AN4X9Q2A;
 				INFOPLIST_FILE = "Find my Tutor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Howard-University.Find-my-Tutor";
@@ -419,6 +421,7 @@
 			baseConfigurationReference = 6E94B92C0D4BEADC26C5622E /* Pods-Find my Tutor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8AN4X9Q2A;
 				INFOPLIST_FILE = "Find my Tutor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Howard-University.Find-my-Tutor";

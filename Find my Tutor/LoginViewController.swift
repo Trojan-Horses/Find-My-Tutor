@@ -24,6 +24,8 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        choiceLabel.delegate = self
+        choiceLabel.dataSource = self
         
         
 
@@ -58,6 +60,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         choiceIndex = row
+        print("The user is picking")
     }
     
     
