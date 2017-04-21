@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "RKDropdownAlert.h"
+#import "FCAlertView.h"
 
-FOUNDATION_EXPORT double RKDropdownAlertVersionNumber;
-FOUNDATION_EXPORT const unsigned char RKDropdownAlertVersionString[];
+FOUNDATION_EXPORT double FCAlertViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char FCAlertViewVersionString[];
 

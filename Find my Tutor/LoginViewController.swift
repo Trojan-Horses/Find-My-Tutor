@@ -8,7 +8,7 @@
 
 import UIKit
 import Parse
-import RKDropdownAlert
+
 
 class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -85,22 +85,38 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else{
+               let alertController = UIAlertController(title: "ERROR", message: "Enter a valid username or password ", preferredStyle: .alert)
                 
-                RKDropdownAlert.show()
-                RKDropdownAlert.title("Login Failed!!", message: "Please Enter a Valid Username and Password")
-                /*let alertController = UIAlertController(title: "ERROR", message: "INVALID VALUES", preferredStyle: .alert)
                 
+                let backView = alertController.view.subviews.last?.subviews.last
+                backView?.layer.cornerRadius = 20.0
+                backView?.backgroundColor = UIColor.green
+                
+                // Change Title With Color and Font:
+                
+                let myString  = "ERROR!!!"
+                var myMutableString = NSMutableAttributedString()
+                myMutableString = NSMutableAttributedString(string: myString as String, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 20.0)!])
+                myMutableString.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange(location:0,length:myString.characters.count))
+                alertController.setValue(myMutableString, forKey: "attributedTitle")
+                
+                let message  = "                                              Enter a valid Username/Password                                                  "
+                var messageMutableString = NSMutableAttributedString()
+                messageMutableString = NSMutableAttributedString(string: message as String, attributes: [NSFontAttributeName:UIFont(name: "Noteworthy", size: 18.0)!])
+                messageMutableString.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange(location:0,length:message.characters.count))
+                alertController.setValue(messageMutableString, forKey: "attributedMessage")
+
+            
                 
                 let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
                     // handle cancel response here. Doing nothing will dismiss the view.
                 }
                 // add the cancel action to the alertController
                 alertController.addAction(cancelAction)
-                */
                 
-                //self.present(alertController, animated: true) {
-                    // optional code for what happens after the alert controller has finished presenting
-         //       }
+             self.present(alertController, animated: true) {
+                    //optional code for what happens after the alert controller has finished presenting
+              }
                 
             }
         }
