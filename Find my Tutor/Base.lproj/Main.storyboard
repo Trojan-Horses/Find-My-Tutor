@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yrN-wN-6dZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="588" y="-593"/>
         </scene>
         <!--Share View Controller-->
         <scene sceneID="Ye3-dh-PaE">
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-Nb-ChA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="862.21889055472275"/>
+            <point key="canvasLocation" x="300" y="291"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="YS9-mO-Doq">
@@ -372,6 +372,92 @@
             </objects>
             <point key="canvasLocation" x="1030" y="139"/>
         </scene>
+        <!--Start View Controller-->
+        <scene sceneID="9lQ-ZV-y7V">
+            <objects>
+                <viewController id="yrN-wN-6dZ" customClass="StartViewController" customModule="Find_my_Tutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPl-mA-FUo"/>
+                        <viewControllerLayoutGuide type="bottom" id="67n-EU-98b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zTh-Dg-fxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-CM-eMb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <view alpha="0.05000000074505806" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q17-fT-emN" customClass="Sta">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-43-KPb">
+                                <rect key="frame" x="88" y="463" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EGV-sF-fS0"/>
+                                    <constraint firstAttribute="height" constant="40" id="syP-F8-QJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="T27-rX-YbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFh-0L-Mzs">
+                                <rect key="frame" x="88" y="527" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UE4-GE-yHd"/>
+                                    <constraint firstAttribute="height" constant="40" id="o28-UZ-c9R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Amx-l7-uWP" kind="modal" id="4Rb-AM-h0d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxJ-n8-c78">
+                                <rect key="frame" x="50" y="140" width="275.5" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EY7-43-KPb" firstAttribute="centerX" secondItem="zTh-Dg-fxv" secondAttribute="centerX" id="3KY-aN-94l"/>
+                            <constraint firstItem="Q17-fT-emN" firstAttribute="width" secondItem="BCJ-CM-eMb" secondAttribute="width" id="3Qg-va-07U"/>
+                            <constraint firstItem="GFh-0L-Mzs" firstAttribute="centerX" secondItem="zTh-Dg-fxv" secondAttribute="centerX" id="9n8-H9-Dxk"/>
+                            <constraint firstItem="dxJ-n8-c78" firstAttribute="top" secondItem="aPl-mA-FUo" secondAttribute="bottom" constant="120" id="AkL-hs-ZT9"/>
+                            <constraint firstItem="dxJ-n8-c78" firstAttribute="centerX" secondItem="zTh-Dg-fxv" secondAttribute="centerX" id="FJj-ki-tvW"/>
+                            <constraint firstItem="BCJ-CM-eMb" firstAttribute="centerX" secondItem="zTh-Dg-fxv" secondAttribute="centerX" id="Ibf-Np-eg6"/>
+                            <constraint firstItem="Q17-fT-emN" firstAttribute="centerX" secondItem="zTh-Dg-fxv" secondAttribute="centerX" id="RzL-9Q-ixB"/>
+                            <constraint firstItem="67n-EU-98b" firstAttribute="top" secondItem="BCJ-CM-eMb" secondAttribute="bottom" id="e2g-Rv-PCY"/>
+                            <constraint firstItem="BCJ-CM-eMb" firstAttribute="centerY" secondItem="zTh-Dg-fxv" secondAttribute="centerY" id="hNA-07-Eyb"/>
+                            <constraint firstItem="BCJ-CM-eMb" firstAttribute="leading" secondItem="zTh-Dg-fxv" secondAttribute="leading" id="iqU-ei-Cua"/>
+                            <constraint firstItem="67n-EU-98b" firstAttribute="top" secondItem="GFh-0L-Mzs" secondAttribute="bottom" constant="100" id="ixG-tf-Vuq"/>
+                            <constraint firstItem="BCJ-CM-eMb" firstAttribute="top" secondItem="zTh-Dg-fxv" secondAttribute="top" id="jPu-Ei-Em0"/>
+                            <constraint firstItem="GFh-0L-Mzs" firstAttribute="top" secondItem="EY7-43-KPb" secondAttribute="bottom" constant="24" id="myp-Nt-J8V"/>
+                            <constraint firstItem="Q17-fT-emN" firstAttribute="height" secondItem="BCJ-CM-eMb" secondAttribute="height" id="na0-K2-hRD"/>
+                            <constraint firstAttribute="trailing" secondItem="BCJ-CM-eMb" secondAttribute="trailing" id="oTy-y7-OkO"/>
+                            <constraint firstItem="Q17-fT-emN" firstAttribute="centerY" secondItem="zTh-Dg-fxv" secondAttribute="centerY" id="qnc-Rf-kVa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="EY7-43-KPb" id="nap-iT-pm6"/>
+                        <outlet property="signUpButton" destination="GFh-0L-Mzs" id="vdB-fK-SF3"/>
+                        <outlet property="webViewBG" destination="BCJ-CM-eMb" id="quB-D5-r5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J22-Cw-wWe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="-571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="findmytutorapp" width="200" height="200"/>
@@ -379,6 +465,7 @@
         <image name="tutorbackg" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="27B-XX-aL4"/>
         <segue reference="V73-y4-YvQ"/>
     </inferredMetricsTieBreakers>
 </document>

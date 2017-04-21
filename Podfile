@@ -6,6 +6,6 @@ target 'Find my Tutor' do
   use_frameworks!
   pod ‘Parse’
   pod ‘ParseUI’
-   # Pods for Find my Tutor
+  # Pods for Find my Tutor
 
 end

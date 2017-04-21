@@ -9,7 +9,6 @@
 import UIKit
 import Parse
 
-
 class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var userNameLabel: UITextField!
@@ -25,11 +24,10 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        choiceLabel.delegate = self
-        choiceLabel.dataSource = self
+        
         
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
