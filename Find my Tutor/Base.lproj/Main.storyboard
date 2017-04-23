@@ -31,6 +31,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiX-8Z-zKd">
                                 <rect key="frame" x="61" y="333" width="249" height="45"/>
@@ -38,6 +43,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-Ky-yl1" customClass="TKTransitionSubmitButton">
                                 <rect key="frame" x="122" y="526" width="131" height="53"/>
@@ -107,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="-593.25337331334333"/>
+            <point key="canvasLocation" x="-570" y="-552"/>
         </scene>
         <!--Share View Controller-->
         <scene sceneID="Ye3-dh-PaE">
@@ -239,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-Nb-ChA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="290.10494752623691"/>
+            <point key="canvasLocation" x="-570" y="242"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="YS9-mO-Doq">
@@ -336,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcK-h1-yyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981.5999999999999" y="465.51724137931041"/>
+            <point key="canvasLocation" x="2689" y="404"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="m4U-68-4oL">
@@ -364,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjU-u1-nCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981.5999999999999" y="-188.45577211394306"/>
+            <point key="canvasLocation" x="3004" y="-805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G6j-2e-don">
@@ -382,7 +392,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltu-8R-oi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="139"/>
+            <point key="canvasLocation" x="825" y="-175"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="9lQ-ZV-y7V">
@@ -468,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J22-Cw-wWe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-782" y="-571"/>
+            <point key="canvasLocation" x="-1444" y="-215"/>
         </scene>
     </scenes>
     <resources>

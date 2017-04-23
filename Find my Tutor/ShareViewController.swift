@@ -188,7 +188,7 @@ class ShareViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                         print("Created a", LoginViewController.currentUserDetail!, " user")
                         
                         
-                        let alertController = UIAlertController(title: "WELCOME", message: "Welcome to Chat", preferredStyle: .alert)
+                        let alertController = UIAlertController(title: "WELCOME", message: "Welcome to Find My Tutor", preferredStyle: .alert)
                         
                         
                         let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
