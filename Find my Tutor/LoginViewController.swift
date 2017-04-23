@@ -45,6 +45,11 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         return choices.count
     }
     
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let titleData = choices[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.white])
+        return myTitle
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
