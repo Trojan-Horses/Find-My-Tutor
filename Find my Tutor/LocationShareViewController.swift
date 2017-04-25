@@ -12,8 +12,17 @@ class LocationShareViewController: UIViewController {
 
     var val = 0
     
+    @IBOutlet weak var buttonClicked: UIImageView!
     @IBOutlet weak var statusButton: UIButton!
     @IBOutlet weak var studentButton: UIButton!
+    @IBAction func locationButton(_ sender: Any) {
+        if val == 0 {
+            self.performSegue(withIdentifier: "Student", sender: nil)
+        } else {
+            self.performSegue(withIdentifier: "tutor", sender: nil)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +32,12 @@ class LocationShareViewController: UIViewController {
             
             studentButton.setTitle("Find Nearby Tutors", for: .normal)
             statusButton.isHidden = true
-            self.performSegue(withIdentifier: "Student", sender: nil)
+//            self.performSegue(withIdentifier: "Student", sender: nil)
             
         } else {
             statusButton.setTitle("Share My Location", for: .normal)
             studentButton.isHidden = true
-            self.performSegue(withIdentifier: "tutor", sender: nil)
+//            self.performSegue(withIdentifier: "tutor", sender: nil)
         }
 
         // Do any additional setup after loading the view.

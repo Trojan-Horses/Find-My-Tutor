@@ -230,6 +230,7 @@
                                 <state key="normal" image="signupbut"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="Amx-l7-uWP" eventType="touchUpInside" id="fTB-A8-4kb"/>
+                                    <segue destination="hBY-sW-U40" kind="show" identifier="loginSignUpSegue" id="S3x-S0-eKP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,7 +244,6 @@
                         <outlet property="passWordTextField" destination="OLg-g4-txG" id="muf-ps-O0v"/>
                         <outlet property="phoneNumberTextField" destination="rhC-J2-ERS" id="YTi-yK-l9p"/>
                         <outlet property="userNameTextField" destination="W8u-h4-VLn" id="d2K-bV-cuW"/>
-                        <segue destination="hBY-sW-U40" kind="presentation" identifier="loginSignUpSegue" id="Kmr-GC-7u5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-Nb-ChA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -384,6 +384,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="locationButton:" destination="hBY-sW-U40" eventType="touchUpInside" id="Ito-vW-Aju"/>
                                     <segue destination="E1k-0t-wqw" kind="presentation" identifier="Student" id="mfY-1G-26p"/>
                                 </connections>
                             </button>
@@ -391,6 +392,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="buttonClicked" destination="x0F-2V-KNM" id="TMB-SC-NnL"/>
                         <outlet property="statusButton" destination="IGj-Yh-CNv" id="jsP-ZP-5aX"/>
                         <outlet property="studentButton" destination="4jd-or-ZO6" id="3d9-uz-hPx"/>
                     </connections>
@@ -730,6 +732,14 @@
                                 <rect key="frame" x="91" y="297" width="199" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="138-N5-NVe">
+                                <rect key="frame" x="168" y="508" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="onClose:" destination="CVp-VM-6ra" eventType="touchUpInside" id="VKU-bz-9At"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -970,6 +980,6 @@
         <image name="username1" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="182-W7-jhY"/>
+        <segue reference="S3x-S0-eKP"/>
     </inferredMetricsTieBreakers>
 </document>
