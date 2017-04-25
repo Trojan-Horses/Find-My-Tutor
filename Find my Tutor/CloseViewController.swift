@@ -10,10 +10,10 @@ import UIKit
 
 class CloseViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBAction func closeButton(_ sender: Any) {
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+        @IBAction func closeButton(_ sender: Any) {
         //dismiss(animated: true, completion: nil)
         
     }
