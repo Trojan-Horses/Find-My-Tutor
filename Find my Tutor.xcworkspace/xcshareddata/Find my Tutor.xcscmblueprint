@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EBAD40747DD23FAFDB7769EEE71E4CDB35AF4AC4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EBAD40747DD23FAFDB7769EEE71E4CDB35AF4AC4" : 9223372036854775807,
+    "D07278FE7199E8E708BC66C266ED2B3256C5D177" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A1B8EF86-AE38-43D5-B7C7-47296628D514",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EBAD40747DD23FAFDB7769EEE71E4CDB35AF4AC4" : "Find-My-Tutor\/",
+    "D07278FE7199E8E708BC66C266ED2B3256C5D177" : "ParseChat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Find my Tutor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Find my Tutor.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dhungelsumit\/ParseChat",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D07278FE7199E8E708BC66C266ED2B3256C5D177"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Trojan-Horses\/Find-My-Tutor",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBAD40747DD23FAFDB7769EEE71E4CDB35AF4AC4"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 PODS:
   - Bolts/Tasks (1.8.4)
+  - Cosmos (8.0.2)
   - Parse (1.14.2):
     - Bolts/Tasks (~> 1.8)
   - ParseUI (1.2.0):
@@ -7,14 +8,16 @@ PODS:
     - Parse (~> 1.9)
 
 DEPENDENCIES:
+  - Cosmos
   - Parse
   - ParseUI
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Cosmos: 007c0b8e33a85e5363911bdd933571bbe221f7ef
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
 
-PODFILE CHECKSUM: 98dec8f0985ef6fe7f7fe3ebc1f47558cf94d823
+PODFILE CHECKSUM: 448cecbea9f0c0bde4c6a298bcc3b3e6c42caf88
 
 COCOAPODS: 1.2.0

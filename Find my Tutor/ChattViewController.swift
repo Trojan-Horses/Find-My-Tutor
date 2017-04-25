@@ -1,5 +1,5 @@
 //
-//  CloseViewController.swift
+//  ChattViewController.swift
 //  Find my Tutor
 //
 //  Created by Sumit Dhungel on 4/25/17.
@@ -7,28 +7,25 @@
 //
 
 import UIKit
-import Cosmos
 
-class CloseViewController: UIViewController {
+class ChattViewController: UIViewController {
+
+    @IBOutlet weak var message: UITextField!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var chatmessage: UILabel!
     
-    @IBOutlet weak var cosmosView: CosmosView!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-        @IBAction func closeButton(_ sender: Any) {
-        //dismiss(animated: true, completion: nil)
-        
-    }
+    @IBOutlet weak var tutor: UILabel!
+    @IBOutlet weak var tmessage: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        tutor.text = "Swapnil"
+        tmessage.text = "Hey, I saw your request. Do you need tutoring?"
+        name.isHidden = true
+        chatmessage.isHidden = true
+
 
         // Do any additional setup after loading the view.
-        
-        nameLabel.text = "Swapnil Tamrakar"
-        phoneLabel.text = "1234567890"
-        emailLabel.text = "swapniltamrakar@hotmail.com"
-        cosmosView.settings.updateOnTouch = false
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +33,13 @@ class CloseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func chatPressed(_ sender: UIButton) {
+        name.isHidden = false
+        name.text = "Sumit"
+        chatmessage.isHidden = false
+        chatmessage.text = message.text
+
+    }
 
     /*
     // MARK: - Navigation
