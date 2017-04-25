@@ -20,8 +20,7 @@ class StudentViewController: UIViewController, MKMapViewDelegate {
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
-        annotation.title = "title"
-        annotation.subtitle = "subtitle"
+        annotation.title = "Swapnil Tamrakar"
         self.mapView.addAnnotation(annotation)
     }
     

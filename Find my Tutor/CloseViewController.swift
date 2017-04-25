@@ -9,7 +9,10 @@
 import UIKit
 
 class CloseViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBAction func closeButton(_ sender: Any) {
         //dismiss(animated: true, completion: nil)
         
@@ -18,6 +21,11 @@ class CloseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        nameLabel.text = "Swapnil Tamrakar"
+        phoneLabel.text = "1234567890"
+        emailLabel.text = "swapniltamrakar@hotmail.com"
+        
     }
 
     override func didReceiveMemoryWarning() {
