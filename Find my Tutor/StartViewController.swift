@@ -15,7 +15,6 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let htmlPath = Bundle.main.path(forResource: "WebViewContent", ofType: "html")
         let htmlURL = URL(fileURLWithPath: htmlPath!)
@@ -29,7 +28,18 @@ class StartViewController: UIViewController {
         self.signUpButton.layer.borderColor = UIColor.white.cgColor
         self.signUpButton.layer.borderWidth = 2
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

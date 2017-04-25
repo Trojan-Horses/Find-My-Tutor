@@ -22,7 +22,6 @@ class ShareViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     static var longitude: String!
     
 
-    
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var userNameTextField: UITextField!
@@ -31,7 +30,6 @@ class ShareViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var firstNameTextField: UITextField!
     static var currentUserDetail: String?
     var userNameTemp: String?
-
     
     @IBOutlet weak var passWordTextField: UITextField!
     
@@ -245,14 +243,14 @@ class ShareViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         }
             
     }
-    /*
+    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! LocationShareViewController
+        vc.val = choiceIndex
     }
-    */
 
 }

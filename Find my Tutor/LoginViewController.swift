@@ -15,6 +15,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBOutlet weak var choiceLabel: UIPickerView!
     @IBOutlet weak var passWordLabel: UITextField!
+    
     var choiceIndex = 0
     
     var choices = ["Student","Tutor"]
@@ -26,8 +27,6 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         super.viewDidLoad()
         choiceLabel.delegate = self
         choiceLabel.dataSource = self
-        
-        
 
 
     }
@@ -38,6 +37,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        self.choiceIndex = row
         return choices[row]
     }
     
@@ -129,15 +129,16 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         
     }
-   
-    /*
+   /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! LocationShareViewController
+        vc.val = self.choiceIndex
+        
     }
-    */
+*/
 
 }

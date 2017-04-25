@@ -11,6 +11,7 @@
 		33FBE64F1EAA861B009573AC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBE64E1EAA861B009573AC /* StartViewController.swift */; };
 		33FBE65B1EAA97A8009573AC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE65A1EAA97A8009573AC /* WebViewContent.html */; };
 		58B9D1BE8E9F1F0B832C578E /* Pods_Find_my_Tutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */; };
+		DD5D2C751EAEAF0D000DC3E2 /* LocationShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D2C741EAEAF0D000DC3E2 /* LocationShareViewController.swift */; };
 		FE1D5A691E9401A5006A6539 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D5A681E9401A5006A6539 /* ShareViewController.swift */; };
 		FE26E18B1EA0453D005EE62C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */; };
 		FE312FAC1E85E0E9000DFE40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE312FAB1E85E0E9000DFE40 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		33FBE64E1EAA861B009573AC /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		33FBE65A1EAA97A8009573AC /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		6E94B92C0D4BEADC26C5622E /* Pods-Find my Tutor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.release.xcconfig"; sourceTree = "<group>"; };
+		DD5D2C741EAEAF0D000DC3E2 /* LocationShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationShareViewController.swift; sourceTree = "<group>"; };
 		E3A968BD5BD06D376CA55E8B /* Pods-Find my Tutor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find my Tutor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find my Tutor/Pods-Find my Tutor.debug.xcconfig"; sourceTree = "<group>"; };
 		F34227E603C2152126EB4CFC /* Pods_Find_my_Tutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_my_Tutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1D5A681E9401A5006A6539 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +112,6 @@
 		FE312FAA1E85E0E9000DFE40 /* Find my Tutor */ = {
 			isa = PBXGroup;
 			children = (
-				33FBE64E1EAA861B009573AC /* StartViewController.swift */,
 				FE312FB71E85E0E9000DFE40 /* Info.plist */,
 				FE312FB21E85E0E9000DFE40 /* Assets.xcassets */,
 				FE312FB41E85E0E9000DFE40 /* LaunchScreen.storyboard */,
@@ -126,11 +127,13 @@
 		FED756E31E85E25400508B87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				33FBE64E1EAA861B009573AC /* StartViewController.swift */,
 				FED756E61E85E30600508B87 /* LoginViewController.swift */,
 				FED756E81E85F3D400508B87 /* MapViewController.swift */,
 				FED756EA1E85F59400508B87 /* ProfileViewController.swift */,
 				FE1D5A681E9401A5006A6539 /* ShareViewController.swift */,
 				FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */,
+				DD5D2C741EAEAF0D000DC3E2 /* LocationShareViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				FED756EB1E85F59400508B87 /* ProfileViewController.swift in Sources */,
 				33FBE64F1EAA861B009573AC /* StartViewController.swift in Sources */,
 				FED756EF1E86124500508B87 /* Student.swift in Sources */,
+				DD5D2C751EAEAF0D000DC3E2 /* LocationShareViewController.swift in Sources */,
 				FED756F11E861AFA00508B87 /* Tutor.swift in Sources */,
 				FE312FAC1E85E0E9000DFE40 /* AppDelegate.swift in Sources */,
 			);

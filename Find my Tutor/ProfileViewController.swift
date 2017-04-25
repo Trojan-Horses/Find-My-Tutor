@@ -46,7 +46,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! ProfileTableViewCell
         
         cell.costLabel.text = "$20"
-        cell.dateLabel.text = "04/20/1026"
+        cell.dateLabel.text = "04/20/2016"
         cell.tutorLabel.text = "Devendra Shah"
         return cell
         
