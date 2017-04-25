@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C5D1F81EAEFD690042CCB6 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5D1F71EAEFD690042CCB6 /* StudentViewController.swift */; };
+		33C5D1FA1EAF1F2E0042CCB6 /* CloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5D1F91EAF1F2E0042CCB6 /* CloseViewController.swift */; };
 		33FBE64A1EAA8295009573AC /* backg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE6491EAA8295009573AC /* backg.gif */; };
 		33FBE64F1EAA861B009573AC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBE64E1EAA861B009573AC /* StartViewController.swift */; };
 		33FBE65B1EAA97A8009573AC /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 33FBE65A1EAA97A8009573AC /* WebViewContent.html */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33C5D1F71EAEFD690042CCB6 /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		33C5D1F91EAF1F2E0042CCB6 /* CloseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseViewController.swift; sourceTree = "<group>"; };
 		33FBE6491EAA8295009573AC /* backg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backg.gif; path = "Find my Tutor/Assets.xcassets/backg.gif"; sourceTree = "<group>"; };
 		33FBE64E1EAA861B009573AC /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		33FBE65A1EAA97A8009573AC /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				FE1D5A681E9401A5006A6539 /* ShareViewController.swift */,
 				FE26E18A1EA0453D005EE62C /* ProfileTableViewCell.swift */,
 				DD5D2C741EAEAF0D000DC3E2 /* LocationShareViewController.swift */,
+				33C5D1F71EAEFD690042CCB6 /* StudentViewController.swift */,
+				33C5D1F91EAF1F2E0042CCB6 /* CloseViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1D5A691E9401A5006A6539 /* ShareViewController.swift in Sources */,
+				33C5D1FA1EAF1F2E0042CCB6 /* CloseViewController.swift in Sources */,
 				FE26E18B1EA0453D005EE62C /* ProfileTableViewCell.swift in Sources */,
 				FED756E71E85E30600508B87 /* LoginViewController.swift in Sources */,
 				FED756E91E85F3D400508B87 /* MapViewController.swift in Sources */,
@@ -290,6 +297,7 @@
 				DD5D2C751EAEAF0D000DC3E2 /* LocationShareViewController.swift in Sources */,
 				FED756F11E861AFA00508B87 /* Tutor.swift in Sources */,
 				FE312FAC1E85E0E9000DFE40 /* AppDelegate.swift in Sources */,
+				33C5D1F81EAEFD690042CCB6 /* StudentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

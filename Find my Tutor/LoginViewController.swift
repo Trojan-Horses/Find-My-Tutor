@@ -129,7 +129,7 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         
     }
-   /*
+   
 
     // MARK: - Navigation
 
@@ -139,6 +139,6 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         vc.val = self.choiceIndex
         
     }
-*/
+
 
 }

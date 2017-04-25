@@ -1,35 +1,21 @@
 //
-//  LocationShareViewController.swift
+//  CloseViewController.swift
 //  Find my Tutor
 //
-//  Created by Rajjwal Rawal on 4/24/17.
+//  Created by Sumit Dhungel on 4/25/17.
 //  Copyright © 2017 Sudheesh Bhattarai. All rights reserved.
 //
 
 import UIKit
 
-class LocationShareViewController: UIViewController {
+class CloseViewController: UIViewController {
 
-    var val = 0
-    
-    @IBOutlet weak var statusButton: UIButton!
-    @IBOutlet weak var studentButton: UIButton!
-    
+    @IBAction func closeButton(_ sender: Any) {
+        //dismiss(animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print (val)
-        
-        if val == 0 {
-            
-            studentButton.setTitle("Find Nearby Tutors", for: .normal)
-            statusButton.isHidden = true
-            self.performSegue(withIdentifier: "Student", sender: nil)
-            
-        } else {
-            statusButton.setTitle("Share My Location", for: .normal)
-            studentButton.isHidden = true
-            self.performSegue(withIdentifier: "tutor", sender: nil)
-        }
 
         // Do any additional setup after loading the view.
     }
